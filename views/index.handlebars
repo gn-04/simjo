@@ -1,0 +1,51 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      SIMJO
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+
+      <form id="new-entry-form" action="/" method="POST">
+        <div class="container">
+          <input type="text" name="title" class="form-control" id="title-input" placeholder="Enter title...">
+        </div>
+        <div class="container">
+          <textarea name="text" id="text-input" placeholder="Enter text..."></textarea>
+        </div>
+        <button id="submit-entry-button">SUBMIT</button>
+      </form>
+      
+    </div>
+  </div>
+</section>
+
+<section id="entries">
+  <div class="container">
+    <div id="entry-display" class="">
+      {{#each entries}}
+       <div class="box entry">
+        <div class="media-content">
+          <div class="content">
+              <div class="title-div"><span class="title-span"><strong>{{this.title}}</strong></span></div>
+              <p>
+              {{this.text}}
+              </p>
+              <span class="date-span">{{this.date}}</span>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
+

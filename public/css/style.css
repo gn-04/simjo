@@ -1,0 +1,77 @@
+body {
+  background-color: rgba(228, 222, 222, 0.89);
+  color: black;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.navbar-brand a {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.hero {
+  background-color: hsl(171, 100%, 41%);
+  text-align: center;
+  justify-content: center;
+  height: 250px;
+  padding: 15px;
+}
+
+#new-entry-form {
+  justify-content: center;
+}
+
+#title-input {
+  margin-bottom: 10px;
+  width: 400px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+#text-input {
+  resize: none;
+  min-width: 400px;
+  min-height: 150px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+#submit-entry-button {
+  min-width: 400px;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: white;
+  color: black;
+}
+
+#submit-entry-button:hover {
+  color: hsl(171, 100%, 41%);
+  background-color: black;
+  
+}
+
+#entry-display {
+  min-height: 75vh;
+  padding: 15px;
+}
+
+.entry .title-div {
+  margin-bottom: 10px;
+}
+
+.entry .title-span{
+  border-bottom: 2px hsl(171, 100%, 41%) solid;
+  font-size: 1.1rem;
+}
+
+.entry .date-span {
+  font-size: .7rem;
+}
+
+
+
+/* .grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+} */
